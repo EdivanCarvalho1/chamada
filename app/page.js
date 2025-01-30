@@ -2,7 +2,6 @@ import { neon } from "@neondatabase/serverless";
 
 export default async function Home() {
   const sql = neon(process.env.DATABASE_URL);
-  console.log(process.env.DATABASE_URL)
   const results = await sql('SELECT nome from nome')
   return (
     <div className="overflow-x-auto">
