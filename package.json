@@ -1,6 +1,7 @@
 {
   "name": "chamada-onibus",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -9,6 +10,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
+    "dotenv": "^16.4.7",
     "next": "15.1.6",
     "pg": "^8.13.1",
     "react": "^19.0.0",
